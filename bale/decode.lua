@@ -256,7 +256,7 @@ local function done(f)
     if v == nil then
       return nil, e
     elseif s:read(0) == nil then
-      return v, e
+      return v
     else
       return nil, "trailing input"
     end
